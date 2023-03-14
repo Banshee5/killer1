@@ -2,7 +2,7 @@ from multiprocessing import Process, Pipe
 import time
 
 def currency(conn, n):
-    conn.send(n)
+    conn.send(n/75)
     conn.close()
 
 if __name__ == '__main__':
